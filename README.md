@@ -1,6 +1,6 @@
 # Frontend Mentor - Blogr landing page
-Hosting-URL: 
+Hosting-URL: <br/>
+https://carshoesch.github.io/blogr_landingpage/
 
-![Design preview for the Blogr landing page coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
