@@ -33,6 +33,13 @@ html {
     font-size: 16px;
     font-family: 'Overpass', sans-serif;
 }
+
+main {
+    padding-top: 10rem;
+    width: 80%;
+    margin: auto;
+}
+
 /* header */
 header {
     height: 50vh;
@@ -143,7 +150,11 @@ nav .signup {
 }
 
 
-
+/* main body */
+main h1{
+    text-align: center;
+    padding-bottom: 4em;
+}
 
 
 /* specials */
