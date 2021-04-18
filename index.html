@@ -1,30 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Blogr]</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-  <link rel="stylesheet" href="./resources/css/style.css">
-</head>
-<body>
-  <!-- navbar -->
+    <title>Frontend Mentor | [Blogr]</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="./app/css/style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
     <header>
       <nav>
         <div class="navbar_wrapper">
           <div class="navbar_wrapper__links">
             <div class="navbar_wrapper__logo_dropdown">
-              <img src="./resources/images/logo.svg" alt="Logo von Blogr " id="blogr_logo">
+              <img
+                src="./resources/images/logo.svg"
+                alt="Logo von Blogr "
+                id="blogr_logo"
+              />
               <div class="navbar_wrapper__drpdwn">
-                <div class="navbar_wrapper__items" >
-                  <li><a href="" class="category">Product&nbsp&nbsp<i class="arrow down"></i></a></li>
+                <div class="navbar_wrapper__items">
+                  <li>
+                    <a href="" class="category"
+                      >Product&nbsp&nbsp<i class="arrow down"></i
+                    ></a>
+                  </li>
                   <ul class="item_drpdwn">
                     <li><a href="#" class="items">Overview</a></li>
                     <li><a href="#" class="items">Pricing</a></li>
@@ -33,8 +51,12 @@
                     <li><a href="#" class="items">Integrations</a></li>
                   </ul>
                 </div>
-                <div class="navbar_wrapper__items" >
-                  <li><a href="" class="category">Company&nbsp&nbsp<i class="arrow down"></i></a></li>
+                <div class="navbar_wrapper__items">
+                  <li>
+                    <a href="" class="category"
+                      >Company&nbsp&nbsp<i class="arrow down"></i
+                    ></a>
+                  </li>
                   <ul class="item_drpdwn">
                     <li><a href="#" class="items">About</a></li>
                     <li><a href="#" class="items">Team</a></li>
@@ -42,9 +64,13 @@
                     <li><a href="#" class="items">Careers</a></li>
                   </ul>
                 </div>
-                <div class="navbar_wrapper__items" >
-                  <li><a href="" class="category">Connect&nbsp&nbsp<i class="arrow down"></i></a></li>
-                  
+                <div class="navbar_wrapper__items">
+                  <li>
+                    <a href="" class="category"
+                      >Connect&nbsp&nbsp<i class="arrow down"></i
+                    ></a>
+                  </li>
+
                   <ul class="item_drpdwn">
                     <li><a href="#" class="items">Contact</a></li>
                     <li><a href="#" class="items">Newsletter</a></li>
@@ -65,53 +91,52 @@
         </div>
       </nav>
       <div class="mainSlogan">
-        <h1 id="hook">
-          A modern publishing platform
-        </h1>
-        <p class="fillerText">
-          Grow your audience and build your online brand
-        </p>
+        <h1 id="hook">A modern publishing platform</h1>
+        <p class="fillerText">Grow your audience and build your online brand</p>
       </div>
       <div class="cta_buttons">
         <div class="cta_button__pink buttonALike">
           <span><a href="#" class="cta_text">Start for Free</a></span>
         </div>
         <div class="cta_button__white buttonALike">
-          <span class="cta_text"><a href="#" >Learn More</a></span>
+          <span class="cta_text"><a href="#">Learn More</a></span>
         </div>
       </div>
     </header>
     <main>
-      <h1>
-        Designed for the future
-      </h1>
+      <h1>Designed for the future</h1>
       <div class="design_features">
         <div class="design_texts">
           <div class="design_feature__texts" id="intro">
             <h3>Introducing an extensible editor</h3>
             <p>
-              Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
-            The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
-            videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
-            change the looks of a blog.
+              Blogr features an exceedingly intuitive interface which lets you
+              focus on one thing: creating content. The editor supports
+              management of multiple blogs and allows easy manipulation of
+              embeds such as images, videos, and Markdown. Extensibility with
+              plugins and themes provide easy ways to add functionality or
+              change the looks of a blog.
             </p>
           </div>
           <div class="design_feature__texts" id="content">
             <h3>Robust content management</h3>
             <p>
-              Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-              by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+              Flexible content management enables users to easily move through
+              posts. Increase the usability of your blog by adding customized
+              categories, sections, format, or flow. With this functionality,
+              you’re in full control.
             </p>
           </div>
         </div>
-      <div class="design_feature__image">
-        <img src="./resources/images/illustration-editor-desktop.svg" alt="Illustration Editor">
-      </div>
+        <div class="design_feature__image">
+          <img
+            src="./resources/images/illustration-editor-desktop.svg"
+            alt="Illustration Editor"
+          />
+        </div>
       </div>
     </main>
-  <div class="attribution">
-    Coded by <a href="#">Carsten Höschele</a>.
-  </div>
-  <script src="./app.js"></script>
-</body>
+    <div class="attribution">Coded by <a href="#">Carsten Höschele</a>.</div>
+    <script src="./app.js"></script>
+  </body>
 </html>
