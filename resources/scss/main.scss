@@ -2,17 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
 
-/* ~ Variables ~ */
-$colors: (
-  /* ~ primary colors ~ */ lightRed: #ff525d,
-  veryLightRed: #ff7a85,
-  veryDarkBlue: #1f3f5b /* ~ neutral colors ~ */ white: #ffffff,
-  black: #000000,
-  grayishBlue: #c8c8cb,
-  veryDarkGrayishBlue: #4b5862,
-  veryDarkBlackBlue: #25252d /* ~ neutral colors ~ */ redGradient:
-    linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%))
-);
+@import "./variables";
+@import "./colors";
+@import "./header";
+@import "./nav";
+@import "./footer";
 
 @function color($color-name) {
   @return map-get($colors, $color-name);
@@ -37,147 +31,6 @@ main {
   padding-top: 10rem;
   width: 80%;
   margin: auto;
-}
-
-/* ~ header ~ */
-header {
-  height: 60vh;
-  background: color(redGradient);
-  background-repeat: no-repeat;
-  border-radius: 0% 0% 0% 5rem;
-  color: color(white);
-
-  .fillerText {
-    opacity: 0.5;
-  }
-
-  .mainSlogan {
-    text-align: center;
-    margin-top: 6rem;
-  }
-
-  #hook {
-    font-size: 3rem;
-  }
-}
-
-nav {
-  padding: 2rem 0rem;
-
-  #blogr_logo {
-    height: 2.8rem;
-    width: auto;
-  }
-
-  .navbar_wrapper {
-    display: flex;
-    width: 80%;
-    margin: auto;
-    align-items: center;
-  }
-
-  .navbar_wrapper__links {
-    width: 100%;
-  }
-
-  .navbar_wrapper__logo_dropdown {
-    display: flex;
-    width: 50%;
-    justify-content: space-between;
-  }
-
-  .navbar_wrapper__items {
-    li {
-      a {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-      }
-    }
-
-    .arrow {
-      border: solid color(white);
-      border-width: 0 3px 3px 0;
-      display: inline-flex;
-      padding: 3px;
-    }
-
-    .down {
-      transform: rotate(45deg);
-      -webkit-transform: rotate(45deg);
-    }
-
-    .item_drpdwn {
-      visibility: hidden;
-      opacity: 0;
-      height: 0;
-      transition: 0.5s;
-      padding-top: 1rem;
-      z-index: 100;
-
-      .items {
-        margin-left: 2rem;
-        color: color(black);
-        padding: 0 1rem;
-      }
-    }
-
-    .items:hover {
-      font-weight: bold;
-      color: color(black);
-    }
-  }
-
-  .navbar_wrapper__items:hover {
-    .item_drpdwn {
-      visibility: visible;
-      opacity: 1;
-      transition: 0.5s;
-    }
-  }
-
-  .navbar_wrapper__drpdwn {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-
-    .category {
-      color: color(white);
-      display: flex;
-      padding-left: 3rem;
-    }
-  }
-
-  .navbar_wrapper__rechts {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 20%;
-
-    .buttonALike {
-      padding: 0.5rem 0rem;
-      border-radius: 1.6rem;
-      font-weight: 600;
-    }
-
-    p {
-      a {
-        padding: 0rem 2rem;
-        color: color(white);
-      }
-    }
-
-    .signup {
-      background: color(white);
-      color: color(lightRed);
-
-      p {
-        a {
-          color: color(lightRed);
-        }
-      }
-    }
-  }
 }
 
 /* ~ main body ~ */

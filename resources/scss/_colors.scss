@@ -1,0 +1,12 @@
+$colors: (
+  /* ~ primary colors ~ */ lightRed: #ff525d,
+  veryLightRed: #ff7a85,
+  veryDarkBlue: #1f3f5b,
+  /* ~ neutral colors ~ */ white: #ffffff,
+  black: #000000,
+  grayishBlue: #c8c8cb,
+  veryDarkGrayishBlue: #4b5862,
+  veryDarkBlackBlue: #25252d,
+  /* ~ neutral colors ~ */ redGradient:
+    linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%))
+);

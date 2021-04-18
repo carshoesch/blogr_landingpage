@@ -1,0 +1,21 @@
+/* ~ header ~ */
+header {
+  height: 60vh;
+  background: color(redGradient);
+  background-repeat: no-repeat;
+  border-radius: 0% 0% 0% 5rem;
+  color: color(white);
+
+  .fillerText {
+    opacity: 0.5;
+  }
+
+  .mainSlogan {
+    text-align: center;
+    margin-top: 6rem;
+  }
+
+  #hook {
+    font-size: 3rem;
+  }
+}
