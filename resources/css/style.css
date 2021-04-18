@@ -32,6 +32,7 @@
 html {
     font-size: 16px;
     font-family: 'Overpass', sans-serif;
+    overflow-x: hidden;
 }
 
 main {
@@ -42,7 +43,7 @@ main {
 
 /* header */
 header {
-    height: 50vh;
+    height: 60vh;
     background: var(--redGradient);
     background-repeat: no-repeat;
     border-radius: 0% 0% 0% 5rem;
@@ -99,10 +100,9 @@ nav .navbar_wrapper__drpdwn{
     justify-content:flex-start;
 /*     border: 1px solid green; */
     /* gap: 2rem; */
-    
 }
 
-nav .navbar_wrapper__drpdwn li a{
+nav .navbar_wrapper__drpdwn .category{
     color: var(--white);
     display: flex;
     padding-left: 3rem;
@@ -113,19 +113,29 @@ nav .navbar_wrapper__items .item_drpdwn{
     opacity: 0;
     height: 0;
     transition: .5s;
-    
 }
+
+nav .item_drpdwn .items{
+    margin-left: 2rem;
+    color: black;
+    padding: 0 1rem;
+}
+
+nav .navbar_wrapper__items .items:hover{
+    font-weight: bold;
+    color: black;
+}
+
+
 nav .navbar_wrapper__items:hover .item_drpdwn {
     visibility: visible;
     opacity: 1;
     transition: .5s;
-
 }
 
 nav .navbar_wrapper__items .item_drpdwn{
     padding-top: 1rem;
     z-index: 100;
-
 }
 
 nav .navbar_wrapper__rechts {
@@ -156,6 +166,31 @@ main h1{
     padding-bottom: 4em;
 }
 
+#hook {
+    font-size: 3rem;
+}
+
+.design_features{
+    display: flex;
+    width: 90vw;
+    overflow-y: visible;
+    overflow-x: hidden;
+}
+
+.design_features .design_feature__texts{
+    flex-basis: 2;
+    width: 60%;
+}
+
+.design_features .design_feature__texts:first-child{
+    margin-bottom: 3rem;
+}
+
+.design_feature__image{
+    flex-basis: 1;
+    width: 40%;
+    transform: translateY(-300px)
+}
 
 /* specials */
 /* buttonlayout */
