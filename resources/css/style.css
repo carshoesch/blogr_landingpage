@@ -11,14 +11,13 @@
     --veryDarkBlue: hsl(208, 49%, 24%);
 
     /* neutral */
-    --white:  hsl(0, 0%, 100%);
-    --grayishBlue:  hsl(240, 2%, 79%);
-    --veryDarkGrayishBlue:  hsl(207, 13%, 34%);
-    --veryDarkBlackBlue:  hsl(240, 10%, 16%);
+    --white: hsl(0, 0%, 100%);
+    --grayishBlue: hsl(240, 2%, 79%);
+    --veryDarkGrayishBlue: hsl(207, 13%, 34%);
+    --veryDarkBlackBlue: hsl(240, 10%, 16%);
 
     /* gradients */
     --redGradient: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%))
-
 }
 
 * {
@@ -37,9 +36,9 @@ html {
 }
 
 main {
-    padding-top: 10rem;
+    /* padding-top: 10rem; */
     width: 80%;
-    margin: auto;
+    margin: 0 auto;
 }
 
 /* header */
@@ -49,9 +48,10 @@ header {
     background-repeat: no-repeat;
     border-radius: 0% 0% 0% 5rem;
     color: var(--white);
-    
+
 }
-header .fillerText{
+
+header .fillerText {
     opacity: 0.5;
 }
 
@@ -68,45 +68,46 @@ header .fillerText{
     cursor: pointer;
 }
 
-.cta_button__pink{
+.cta_button__pink {
     background: var(--white);
     transition: .5s;
 }
 
-.cta_button__pink a{
+.cta_button__pink a {
     color: var(--lightRed);
 }
 
-.cta_button__pink:hover{
+.cta_button__pink:hover {
     background: var(--veryLightRed);
     transition: .5s;
 }
 
-.cta_button__pink:hover a{
+.cta_button__pink:hover a {
     color: var(--white);
     transition: .5s;
 }
 
-.cta_button__white{
+.cta_button__white {
     background: transparent;
     border: 1px solid var(--white);
     transition: .5s;
 }
-.cta_button__white a{
+
+.cta_button__white a {
     color: var(--white);
 }
 
-.cta_button__white:hover{
+.cta_button__white:hover {
     background: var(--white);
     transition: .5s;
 }
 
-.cta_button__white:hover a{
+.cta_button__white:hover a {
     color: var(--lightRed);
     transition: .5s;
 }
 
-.cta_text{
+.cta_text {
     padding: 0 1rem;
 }
 
@@ -140,40 +141,40 @@ nav .navbar_wrapper__logo_dropdown {
 
 }
 
-nav .navbar_wrapper__items li a{
+nav .navbar_wrapper__items li a {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-nav .navbar_wrapper__drpdwn{
+nav .navbar_wrapper__drpdwn {
     display: flex;
     align-items: center;
-    justify-content:flex-start;
-/*     border: 1px solid green; */
+    justify-content: flex-start;
+    /*     border: 1px solid green; */
     /* gap: 2rem; */
 }
 
-nav .navbar_wrapper__drpdwn .category{
+nav .navbar_wrapper__drpdwn .category {
     color: var(--white);
     display: flex;
     padding-left: 3rem;
 }
 
-nav .navbar_wrapper__items .item_drpdwn{
+nav .navbar_wrapper__items .item_drpdwn {
     visibility: hidden;
     opacity: 0;
     height: 0;
     transition: .5s;
 }
 
-nav .item_drpdwn .items{
+nav .item_drpdwn .items {
     margin-left: 2rem;
     color: black;
     padding: 0 1rem;
 }
 
-nav .navbar_wrapper__items .items:hover{
+nav .navbar_wrapper__items .items:hover {
     font-weight: bold;
     color: black;
 }
@@ -185,7 +186,7 @@ nav .navbar_wrapper__items:hover .item_drpdwn {
     transition: .5s;
 }
 
-nav .navbar_wrapper__items .item_drpdwn{
+nav .navbar_wrapper__items .item_drpdwn {
     padding-top: 1rem;
     z-index: 100;
 }
@@ -199,17 +200,22 @@ nav .navbar_wrapper__rechts {
     cursor: pointer;
 }
 
-.navbar_wrapper__rechts .cta_button__pink{
+.navbar_wrapper__rechts_mobile {
+    visibility: hidden;
+}
+
+.navbar_wrapper__rechts .cta_button__pink {
     padding: .5rem 2rem;
 }
 
-nav .navbar_wrapper__rechts p a{
+nav .navbar_wrapper__rechts p a {
     padding: 0rem 2rem;
     color: var(--white);
 }
-nav .navbar_wrapper__rechts .signup p a{
+
+nav .navbar_wrapper__rechts .signup p a {
     color: var(--lightRed);
-    
+
 }
 
 nav .signup {
@@ -217,39 +223,57 @@ nav .signup {
     color: var(--lightRed);
 }
 
-.login a{
+.login a {
     color: var(--white);
 }
 
 
 /* main body */
-main h1{
+main h1 {
     text-align: center;
-    padding-bottom: 4em;
+    border: 2px solid blue;
+    /* padding-bottom: 4em; */
+    margin: 3em 0;
+    font-size: 3rem;
 }
 
 #hook {
     font-size: 3rem;
 }
 
-.design_features{
+/* first row containing two columns: one column with the placed on the left and another with an image on the right */
+
+.row {
     display: flex;
-    width: 90vw;
+    flex-direction: row;
+    border: 2px solid red;
+    margin-bottom: 15em;
 }
 
-.design_features .design_feature__texts{
-    flex-basis: 2;
-    width: 60%;
+.design_texts {
+    border: 2px solid pink;
+    text-align: left;
+    padding: 5em 8em 0em 0em;
+    width: 50%;
+    line-height: 1.75em;
 }
 
-.design_features .design_feature__texts:first-child{
-    margin-bottom: 3rem;
+
+.row .design_feature__texts:first-child {
+    margin-bottom: 3em;
 }
 
-.design_feature__image{
+.row .design_feature__texts h3 {
+    margin-bottom: .2em;
+    font-size: 2rem;
+}
+
+.design_feature__image {
+    overflow: visible;
     flex-basis: 1;
-    width: 40%;
-    transform: translateY(-300px)
+    width: 50%;
+    transform: translateY(-200px) translateX(100px);
+    margin-bottom: -25em;
 }
 
 /* specials */
@@ -264,15 +288,20 @@ main h1{
 .arrow {
     border: solid var(--white);
     border-width: 0 3px 3px 0;
-    display:inline-flex;
+    display: inline-flex;
     padding: 3px;
-  }
+}
 
-  .down {
+.down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
-  }
+}
 
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
 
-
-
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
